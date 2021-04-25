@@ -1,0 +1,351 @@
+@font-face {
+    font-family: customLatoFont;
+    src: url("res/Lato/Lato-Light.ttf");
+}
+
+body{
+    margin: 0%;
+    scroll-behavior: smooth;
+    font-family: customLatoFont;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: rgb(0, 4, 61);        /* color of the tracking area */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);    /* color of the scroll thumb */
+   
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid rgb(0, 0, 0);  /* creates padding around scroll thumb */
+  }
+
+
+
+
+
+section.headSection{
+    width: 100%;
+    background: url("res/bg.png");
+    background-size: contain;
+ 
+    color: white;
+    height: 610px;
+
+}
+
+/**** side bar ***/ 
+span.sideopen{
+    color: white;
+    font-size:30px;
+    cursor:pointer;
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:  rgba(0, 0, 0, 0.705);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align: center;
+  }
+  
+  .sidenav a {
+    padding: 8px 50px 30px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #ffffff;
+    font-weight: 900;
+    
+    
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 40px;
+    margin-left: 10px;
+  }
+
+/***************************************/
+
+
+/****** NAV BAR ***********************************************/
+
+div.navbarParent{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+div.content{
+    text-align: right;
+    padding: 10px;
+   
+}
+
+div.navlinks>a,a:visited,a:active,a:checked{
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    margin: 12px;
+
+}
+
+/****** HEAD CONTENT ***********************************************/
+
+div.headContent{
+    width: 90%;
+    margin: auto;
+    margin-top: 130px;
+}
+
+div.headContent>h1{
+    font-size: 90px;
+    margin-bottom: 10px;
+}
+
+
+div.headContent>h3{
+    font-size: 30px;
+
+    
+}
+
+div.headContent>a{
+    margin-top: 30px;
+    font-size: 20px;
+    transition: 0.5s ease;
+    padding: 13px;
+    text-decoration: none;
+    background-color: white;
+    color: rgb(1, 1, 94);
+    font-weight: 900;
+    border-radius: 10px;
+    
+}
+
+div.headContent>a:hover{
+    
+    border: 2px solid rgb(255, 255, 255);
+   
+    background-color: rgb(19, 0, 113);
+    color: white;
+    transition: 0.5s ease;
+    
+}
+
+
+/****** ABOUT Section ***********************************************/
+
+section.aboutSection{
+    color: black;
+    margin-bottom: 110px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+h1.sectionHeadings{
+    font-size: 40px;
+    text-align: center;
+}
+
+div.about{
+    width: 70%;
+    margin:auto;
+}
+
+img.logo{
+    width: 20%;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+p.fordata{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p.forC{
+    text-align: center;
+    margin-top: 40px;
+  
+}
+
+
+a.courseview{
+    
+    font-size: 20px;
+    transition: 0.2s ease;
+    padding: 13px;
+    text-decoration: none;
+    background-color: rgb(1, 1, 94);
+    color: white;
+    font-weight: 900;
+    border-radius: 10px;
+    margin: auto;
+    
+    
+}
+
+a.courseview:hover{
+    
+    border: 2px solid rgb(1, 1, 94);
+   
+    background-color: white;
+    color: rgb(1, 1, 94);
+    transition: 0.5s ease;
+    
+}
+
+
+/******* Latest Video ************/
+section.latestSection{
+    color: black;
+    margin-bottom: 110px;
+    width: 100%;
+    margin-top: 40px;
+
+}
+
+div.latestHolder{
+    width: 75%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+div.latestHolder>iframe{
+    margin: 10px;
+    width:444px ;
+    height:250px;
+    border-radius: 25px;
+    transform: scale(0.9);
+    transition: transform .5s ease;
+}
+
+div.latestHolder>iframe:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+section.latestSection>h2{
+    text-align: center;
+    
+}
+
+/*********** Footer contact ************/
+footer.contactPanel{
+    width: 100%;
+    background-color: rgb(0, 0, 44);
+    color: white;
+    height: 250px;
+    text-align: center;
+    
+}
+
+div.fcuntn{
+    padding: 20px;
+}
+
+div.flinks{
+    margin-top: 10px;
+}
+
+a.flink{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+
+
+
+
+
+/**********************************************************************************/
+
+@media screen and (max-width:400px){
+
+span.sideopen{
+    display: block;
+    text-align: right;
+    padding-right: 5px;
+    font-size: 40px;
+}
+
+div.navbarParent{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+section.headSection{
+    height: auto;
+    padding-bottom: 35px;
+}
+
+div.content{
+    display: none;
+}
+
+div.headContent{
+    margin: auto;
+}
+
+div.headContent>h1{
+    font-size: 80px;
+}
+
+div.headContent>h3{
+    font-size: 28px;
+}
+
+div.about{
+    width: 80%;
+}
+
+img.logo{
+    width: 40%;
+}
+
+div.latestHolder{
+    width: 85%;
+    margin: auto;
+    margin-top: 50px;
+}
+
+div.latestHolder>iframe{
+    margin: 10px;
+    width:300px ;
+    height:169px;
+    border-radius: 25px;
+    transform: scale(0.9);
+    transition: transform .5s ease;
+}
+
+div.latestHolder>iframe:hover{
+    transform: scale(1.1);
+}
+
+section.latestSection>h2{
+    font-size: 20px;
+}
+
+
+}
