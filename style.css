@@ -311,7 +311,11 @@ div.headContent{
 div.headContent>h1{
     font-size: 80px;
 }
+section.aboutSection>h1{
 
+    font-size: 35px;
+}
+    
 div.headContent>h3{
     font-size: 28px;
 }
